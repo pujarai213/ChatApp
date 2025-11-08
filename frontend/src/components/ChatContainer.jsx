@@ -3,7 +3,7 @@ import React from 'react'
 function ChatContainer() {
   return (
     <div>
-      container
+      <h1>ChatContainer</h1>
     </div>
   )
 }

@@ -68,27 +68,6 @@ export const useAuthStore = create((set, get) => ({
       toast.error("Error logging out");
       console.log("Logout error:", error);
     }
-  },
-
-  //   connectSocket: () => {
-  //     const { authUser } = get();
-  //     if (!authUser || get().socket?.connected) return;
-
-  //     const socket = io(BASE_URL, {
-  //       withCredentials: true, // this ensures cookies are sent with the connection
-  //     });
-
-  //     socket.connect();
-
-  //     set({ socket });
-
-  //     // listen for online users event
-  //     socket.on("getOnlineUsers", (userIds) => {
-  //       set({ onlineUsers: userIds });
-  //     });
-  //   },
-
-  //   disconnectSocket: () => {
-  //     if (get().socket?.connected) get().socket.disconnect();
+  }
   //   },
 }));
