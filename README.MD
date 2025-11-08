@@ -10,6 +10,13 @@ Zustand for State Management
 Error handling and toast notifications
 Git & GitHub Workflow (branches, PRs, merges)
 
+Tech Stack
+Frontend: React, Tailwind CSS 
+Backend: Node.js, Express.js, Socket.IO
+Database: MongoDB
+Authentication: JSON Web Token (JWT)
+Others: nodemon, dotenv, bcrypt, cookie-parser, react-router, axios, zustand, lucide-react, react-hot-toast 
+
 .env Setup
 Backend (/backend)
 PORT=3000
