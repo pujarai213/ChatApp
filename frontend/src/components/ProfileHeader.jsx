@@ -1,11 +1,54 @@
-import React from 'react'
+import { useState, useRef } from "react";
+import { LogOutIcon } from "lucide-react";
+import { useAuthStore } from "../store/useAuthStore";
 
 function ProfileHeader() {
-  return (
-    <div>
-      headerProfile
-    </div>
-  )
-}
+  const { logout, authUser } = useAuthStore();
+  const [selectedImg] = useState(null);
 
-export default ProfileHeader
+  const fileInputRef = useRef(null);
+
+  return (
+    <div className="p-6 border-b border-slate-700/50">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          {/* AVATAR */}
+          <div className="avatar online">
+            <button
+              className="size-14 rounded-full overflow-hidden relative group"
+              onClick={() => fileInputRef.current.click()}
+            >
+              <img
+                src={selectedImg || authUser.profilePic || "/avatar.png"}
+                alt="User image"
+                className="size-full object-cover"
+              />
+            </button>
+          </div>
+
+          {/* USERNAME & ONLINE TEXT */}
+          <div>
+            <h3 className="text-slate-200 font-medium text-base max-w-[180px] truncate">
+              {authUser.fullName}
+            </h3>
+
+            <p className="text-slate-400 text-xs">Online</p>
+          </div>
+        </div>
+
+        {/* BUTTONS */}
+        <div className="flex gap-4 items-center">
+          {/* LOGOUT BTN */}
+          <button
+            className="text-slate-400 hover:text-slate-200 transition-colors"
+            onClick={logout}
+          >
+            <LogOutIcon className="size-5" />
+          </button>
+
+        </div>
+      </div>
+    </div>
+  );
+}
+export default ProfileHeader;

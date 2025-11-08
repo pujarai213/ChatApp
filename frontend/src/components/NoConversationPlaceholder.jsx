@@ -3,7 +3,7 @@ import React from 'react'
 function NoConversationPlaceholder() {
   return (
     <div>
-      placeholder no
+      <h1>NoConversationPlaceholder</h1>
     </div>
   )
 }
