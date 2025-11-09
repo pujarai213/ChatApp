@@ -1,3 +1,4 @@
+<h1 align="center">✨ Full-Stack Chat App with Socket.io✨</h1>
 
 Highlights:
 
@@ -19,7 +20,7 @@ Error handling and toast notifications
 
 Git & GitHub Workflow (branches, PRs, merges)
 
-
+---
 
 Tech Stack
 
@@ -33,7 +34,7 @@ Authentication: JSON Web Token (JWT)
 
 Others: nodemon, dotenv, bcrypt, cookie-parser, react-router, axios, zustand, lucide-react, react-hot-toast 
 
-
+---
 
 .env Setup
 
@@ -49,7 +50,7 @@ JWT_SECRET=your_jwt_secret
 
 CLIENT_URL=http://localhost:5173
 
-
+---
 
 Run the Backend
 
