@@ -1,6 +1,6 @@
-<h1 align="center">✨ Full-Stack Chat App with Socket.io✨</h1>
+<h1 align="center">Full-Stack Chat App with Socket.io✨</h1>
 
-Highlights:
+ <b>Highlights:</b>
 
 Custom JWT Authentication (no 3rd-party auth)
 
@@ -22,7 +22,7 @@ Git & GitHub Workflow (branches, PRs, merges)
 
 ---
 
-Tech Stack
+<b>Tech Stack</b>
 
 Frontend: React, Tailwind CSS 
 
@@ -36,7 +36,7 @@ Others: nodemon, dotenv, bcrypt, cookie-parser, react-router, axios, zustand, lu
 
 ---
 
-.env Setup
+<b>.env Setup</b>
 
 Backend (/backend)
 
@@ -52,7 +52,7 @@ CLIENT_URL=http://localhost:5173
 
 ---
 
-Run the Backend
+<b>Run the Backend</b>
 
 cd backend
 
@@ -60,9 +60,9 @@ npm install
 
 npm run dev
 
+---
 
-
-Run the Frontend
+<b>Run the Frontend</b>
 
 cd frontend
 
